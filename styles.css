@@ -1,0 +1,78 @@
+@import url("https://fonts.cdnfonts.com/css/dot-matrix");
+.train-image {
+  background-image: url("train_game.gif") !important;
+  background-repeat: space no-repeat !important;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.header {
+  margin: 3vmin;
+  text-align: right;
+}
+
+.letter.broken {
+  animation: break 1s ease-out;
+  background-color: rgb(2, 6, 18);
+  color: rgb(2, 6, 18);
+}
+
+.letter {
+  cursor: pointer;
+  display: inline-block;
+  background-color: rgb(4, 12, 35);
+  height: 4rem;
+  width: 2rem;
+  margin: 4px;
+  font-size: 4em;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  font-size: 3.5rem;
+}
+
+body {
+  background-color: black;
+  color: rgb(255, 196, 0);
+  font-family: "Dot Matrix", sans-serif;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.text-small {
+  font-size: 1rem;
+}
+.text-medium {
+  font-size: 2rem;
+}
+.text-large {
+  font-size: 3.5rem;
+}
+
+@keyframes break {
+  0% {
+    background-color: black;
+    color: black;
+  }
+  10% {
+    background-color: rgb(2, 6, 18);
+    color: rgb(2, 6, 18);
+  }
+  70% {
+    background-color: rgb(2, 6, 18);
+    color: rgb(2, 6, 18);
+  }
+  100% {
+    background-color: rgb(4, 12, 35);
+    color: orange;
+  }
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
